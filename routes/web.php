@@ -2,16 +2,19 @@
 
 /*
 |--------------------------------------------------------------------------
-| Web Routes
+| IF Baiano - SisCap
+| Instituto Federal de Educação, Ciência e Tecnologia Baiano
 |--------------------------------------------------------------------------
 |
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
 |
 */
-
+// Ambiente de rotas para access - controller - view
 Route::get('/', function () {
-    return view('index');
+    return view('index'); // início
 });
-Route::get('/inicio','EmployeeController@Access');
+// Gerência de funcionários / servidores
+Route::get('/docservidores','EmployeeController@AccessDoc');
+Route::get('/docinativos','EmployeeController@InactiveDoc');
+Route::get('/taeservidores','EmployeeController@AccessTae');
+Route::get('/taeinativos','EmployeeController@InactiveTae');
+Route::get('/registro','EmployeeController@ServerLog');

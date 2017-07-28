@@ -8,8 +8,27 @@ use Illuminate\Support\Facades\DB;
 
 class EmployeeController extends Controller{
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
-		function Access(){
-			$employee = DB::select('select * from employee');
-			return view('employee')->withEmployee($employee);
+		function AccessDoc(){
+			// Servidores do quadro ativos
+			$employee = DB::select('select * from employee where employee.classification = "EBTT" AND employee.out_service = "0000-00-00" ORDER BY name');
+			return view('employeedoc')->withEmployee($employee);
+		}
+		function InactiveDoc(){
+			// Servidores do quadro inativos
+			$employee = DB::select('select * from employee where employee.classification = "EBTT" AND employee.out_service != "0000-00-00" ORDER BY name');
+			return view('inactiveemployeedoc')->withEmployee($employee);
+		}
+		function AccessTae(){
+			// Servidores do quadro ativos
+			$employee = DB::select('select * from employee where employee.classification = "TAE" AND employee.out_service = "0000-00-00" ORDER BY name');
+			return view('employeetae')->withEmployee($employee);
+		}
+		function InactiveTae(){
+			// Servidores do quadro inativos
+			$employee = DB::select('select * from employee where employee.classification = "TAE" AND employee.out_service != "0000-00-00" ORDER BY name');
+			return view('inactiveemployeetae')->withEmployee($employee);
+		}
+		function ServerLog(){
+			return view('serverlog');
 		}
 }

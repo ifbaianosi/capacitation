@@ -45,9 +45,8 @@
                     <button class="navbar-toggler pull-xs-right hidden-md-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
                         <div class="hamburger-icon"></div>
                     </button>
-
-                    <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar"><li class="nav-item dropdown open"><a class="nav-link link dropdown-toggle" href="#" aria-expanded="false" data-toggle="dropdown-submenu">Introdução</a><div class="dropdown-menu"><a class="dropdown-item" href="#">?Como usar<br></a><a class="dropdown-item" href="#">Sobre</a></div></li><li class="nav-item nav-btn"><a class="nav-link btn btn-white btn-white-outline" href="/inicio">LOGIN</a></li></ul>
-                    <button hidden="" class="navbar-toggler navbar-close" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+					<ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar"><li class="nav-item dropdown open"><a class="nav-link link dropdown-toggle" href="#" aria-expanded="true" data-toggle="dropdown-submenu">Informações Públicas</a><div class="dropdown-menu"><div class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" aria-expanded="false" data-toggle="dropdown-submenu">Servidores<br></a><div class="dropdown-menu dropdown-submenu"><div class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" data-toggle="dropdown-submenu" aria-expanded="false">Docentes</a><div class="dropdown-menu dropdown-submenu"><a class="dropdown-item" href="/docservidores">Em Atividade</a><a class="dropdown-item" href="/docinativos">Afastados</a></div></div><div class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" data-toggle="dropdown-submenu" aria-expanded="false">Técnicos Administrativos</a><div class="dropdown-menu dropdown-submenu"><a class="dropdown-item" href="taeservidores">Efetivos</a><a class="dropdown-item" href="taeinativos">Afastados</a></div></div></div></div><a class="dropdown-item" href="#" aria-expanded="true">Solicitações de Veículos</a><a class="dropdown-item" href="#" aria-expanded="true">Planilhas e Relatórios</a></div></li><li class="nav-item nav-btn"><a class="nav-link btn btn-white btn-white-outline" href="/">LOGIN</a></li><li class="nav-item nav-btn"><a class="nav-link btn btn-white btn-white-outline" href="/registro">Gerenciar</a></li></ul>
+					<button hidden="" class="navbar-toggler navbar-close" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
                         <div class="close-icon"></div>
                     </button>
 
@@ -59,7 +58,7 @@
 
 </section>
 
-<section class="engine"><a rel="external" href="#">SisCap</a></section><section class="mbr-section article mbr-parallax-background mbr-after-navbar" id="msg-box8-a" style="background-image: url(assets/images/mbr-1-2000x1333.jpg); padding-top: 120px; padding-bottom: 40px;">
+<section class="engine"><a rel="external" href="#">SisCap</a></section><section class="mbr-section article mbr-parallax-background mbr-after-navbar" id="msg-box8-a" style="background-image: url(assets/images/mbr-1-2000x1333.jpg); padding-top: 60px; padding-bottom: 40px;">
 
     <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(34, 34, 34);">
     </div>
@@ -75,14 +74,14 @@
 
 </section>
 
-<section class="mbr-section article" id="msg-box3-b" style="background-color: rgb(242, 242, 242); padding-top: 120px; padding-bottom: 120px;">
+<section class="mbr-section article" id="msg-box3-b" style="background-color: rgb(242, 242, 242); padding-top: 60px; padding-bottom: 60px;">
 
     
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2 text-xs-center">
                 <h3 class="mbr-section-title display-2">IF Baiano</h3>
-                <div class="lead"><p><em>Sistema de Gestão de Solicitações de Saídas para capacitações</em></p></div>
+                <div class="lead"><p><em>Sistema de Gestão de Solicitações de Saídas para Capacitações</em></p></div>
                 <div><a class="btn btn-secondary" href="http://www.ifbaiano.edu.br/unidades/santaines/" target="_blank">Instituto Federal de Educação, Ciência e Tecnologia Baiano</a></div>
             </div>
         </div>
