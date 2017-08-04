@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
+    'host' => env('MAIL_HOST', 'smtp.ifbaiano.edu.br'),
 
     /*
     |--------------------------------------------------------------------------
@@ -56,8 +56,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        'address' => env('Sistema de Saída para capacitação', 'gil.santos@ifbaiano.edu.br'),
+        'name' => env('SisCap', 'Funciona!'),
     ],
 
     /*
@@ -84,9 +84,9 @@ return [
     |
     */
 
-    'username' => env('MAIL_USERNAME'),
+    'username' => env('gil.santos'),
 
-    'password' => env('MAIL_PASSWORD'),
+    'password' => env('123190755'),
 
     /*
     |--------------------------------------------------------------------------

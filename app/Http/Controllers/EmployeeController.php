@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\DB;
 
 class EmployeeController extends Controller{
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+	// Gerência de funcionários / servidores
+	// listagens
 		function AccessDoc(){
 			// Servidores do quadro ativos
 			$employee = DB::select('select * from employee where employee.classification = "EBTT" AND employee.out_service = "0000-00-00" ORDER BY name');
@@ -31,4 +33,24 @@ class EmployeeController extends Controller{
 		function ServerLog(){
 			return view('serverlog');
 		}
-}
+	// cadastros
+		function EnvironmentRegServ(){
+			return view('environmentregserv');
+		}
+		function RunRegServ(){
+			$name = Request::input('name');
+			$surname = Request::input('surname');
+			$office = Request::input('office');
+			$birth = Request::input('birth');
+			$email = Request::input('email');
+			$siape = Request::input('siape');
+			$phone = Request::input('phone');
+			$entry_service = Request::input('entry_service');
+			$out_service = "0000-00-00";
+			$annotation = Request::input('annotation');
+			// DB::table('servidor_setor')->insert(['idservidor'=>$idservidor,'idsetor'=>$idSetor,'entrada'=>'2015-10-10','saida'=>'0001-01-01','funcao'=>'Não possui']);
+			DB::insert('insert into employee(name,surname,office,birth,email,siape,phone,entry_service,out_service,annotation)values(?,?,?,?,?,?,?,?,?,?)',array($name,$surname,$office,$birth,$email,$siape,$phone,$entry_service,$out_service,$annotation));
+			return view('runregserv');
+		}
+	
+	}

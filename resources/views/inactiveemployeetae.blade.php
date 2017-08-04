@@ -9,7 +9,7 @@
   <meta name="generator" content="Mobirise v3.12.1, mobirise.com">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
-  <meta name="description" content="">
+  <meta name="description" content="IFBaiano Servidor Sistema Capacitação">
   
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;subset=latin">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
@@ -47,7 +47,7 @@
                     <button class="navbar-toggler pull-xs-right hidden-md-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
                         <div class="hamburger-icon"></div>
                     </button>
-					<ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar"><li class="nav-item dropdown open"><a class="nav-link link dropdown-toggle" href="#" aria-expanded="true" data-toggle="dropdown-submenu">Informações Públicas</a><div class="dropdown-menu"><div class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" aria-expanded="false" data-toggle="dropdown-submenu">Servidores<br></a><div class="dropdown-menu dropdown-submenu"><div class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" data-toggle="dropdown-submenu" aria-expanded="false">Docentes</a><div class="dropdown-menu dropdown-submenu"><a class="dropdown-item" href="/docservidores">Em Atividade</a><a class="dropdown-item" href="/docinativos">Afastados</a></div></div><div class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" data-toggle="dropdown-submenu" aria-expanded="false">Técnicos Administrativos</a><div class="dropdown-menu dropdown-submenu"><a class="dropdown-item" href="taeservidores">Efetivos</a><a class="dropdown-item" href="taeinativos">Afastados</a></div></div></div></div><a class="dropdown-item" href="#" aria-expanded="true">Solicitações de Veículos</a><a class="dropdown-item" href="#" aria-expanded="true">Planilhas e Relatórios</a></div></li><li class="nav-item nav-btn"><a class="nav-link btn btn-white btn-white-outline" href="/">LOGIN</a></li><li class="nav-item nav-btn"><a class="nav-link btn btn-white btn-white-outline" href="http://www.ifbaiano.edu.br/unidades/santaines/" target="_blank">IF Baiano</a></li></ul>
+					<ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar"><li class="nav-item dropdown open"><a class="nav-link link dropdown-toggle" href="#" aria-expanded="true" data-toggle="dropdown-submenu">Informações Públicas</a><div class="dropdown-menu"><div class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" aria-expanded="false" data-toggle="dropdown-submenu">Servidores<br></a><div class="dropdown-menu dropdown-submenu"><div class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" data-toggle="dropdown-submenu" aria-expanded="false">Docentes</a><div class="dropdown-menu dropdown-submenu"><a class="dropdown-item" href="/docservidores">Em Atividade</a><a class="dropdown-item" href="/docinativos">Afastados</a></div></div><div class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" data-toggle="dropdown-submenu" aria-expanded="false">Técnicos Administrativos</a><div class="dropdown-menu dropdown-submenu"><a class="dropdown-item" href="taeservidores">Efetivos</a><a class="dropdown-item" href="taeinativos">Afastados</a></div></div><a class="dropdown-item" href="#" aria-expanded="true">Aniversariantes do mês</a></div></div><a class="dropdown-item" href="#" aria-expanded="true">Solicitações de Veículos</a><a class="dropdown-item" href="#" aria-expanded="true">Planilhas e Relatórios</a></div></li><li class="nav-item nav-btn"><a class="nav-link btn btn-white btn-white-outline" href="/">LOGIN</a></li><li class="nav-item nav-btn"><a class="nav-link btn btn-white btn-white-outline" href="http://www.ifbaiano.edu.br/unidades/santaines/" target="_blank">IF Baiano</a></li></ul>
                     <button hidden="" class="navbar-toggler navbar-close" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
                         <div class="close-icon"></div>
                     </button>
@@ -102,7 +102,7 @@
 						?>
 						Data de nascimento <?= $e->birth[8].$e->birth[9].' de '.$strMonth.' de '.$year;?></br>
 						Currículo Lattes <img src="assets/glyphicons_free/glyphicons/png/glyphicons-501-education.png"></br>
-						E-mail <img src="assets/glyphicons_free/glyphicons/png/glyphicons-11-envelope.png"></br>
+						E-mail <a href="mailto:<?= $e->email; ?>"><img src="assets/glyphicons_free/glyphicons/png/glyphicons-11-envelope.png" title="<?= $e->name; ?>"></a></br>
 						<span class="glyphicon glyphicon-shopping-cart"></span>
 					</p>
 				</div>
