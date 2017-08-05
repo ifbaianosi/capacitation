@@ -19,4 +19,4 @@ Route::get('/taeinativos','EmployeeController@InactiveTae'); // lista técnicos 
 Route::get('/registro','EmployeeController@ServerLog'); // lista de logs
 // cadastros
 Route::get('/envregserv','EmployeeController@EnvironmentRegServ'); // ambiente de acesso inicial para cadastro de servidores
-Route::get('/runregserv','EmployeeController@RunRegServ'); // ambiente para executar os cadastros dos servidores
+Route::post('/runregserv','EmployeeController@RunRegServ'); // ambiente para executar os cadastros dos servidores

@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
 </head>
 <body class="rtl">
-<form action="runregserv" method="get">
+<form action="runregserv" method="post">
 <section id="ext_menu-5">
     <nav class="navbar navbar-dropdown navbar-fixed-top">
         <div class="container">
@@ -64,7 +64,6 @@
             <div class="col-md-8 col-md-offset-2 text-xs-center">
                 <h3 class="mbr-section-title display-2"></h3>
                 <div class="lead"><p>.</p></div>
-                
             </div>
         </div>
     </div>
@@ -89,12 +88,10 @@
                         <div hidden="" data-form-alert-success="true" class="alert alert-form alert-success text-xs-center">SisCap</div>
                     </div>
 
-                    <form action="https://mobirise.com/" method="post" data-form-title="CM">
-
                         <input type="hidden" value="67TfuIAUzbcH617oJdvJ6thgPg3r3JA7pXgW/hwW6zP5+0e6Yo/YcWevdWU8CxX75RYcPV/r+mu+uVkL0GnnR3lPBqN5DQTVI19lhAy8eGqRZI+yCBoAwCE3Ev7JkqB0" data-form-email="true">
 
                         <div class="row row-sm-offset">
-
+						<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
                             <div class="col-xs-12 col-md-3">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-g-name">Name<span class="form-asterisk">*</span></label>
