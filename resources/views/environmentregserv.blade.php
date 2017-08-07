@@ -24,7 +24,6 @@
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
 </head>
 <body class="rtl">
-<form action="runregserv" method="post">
 <section id="ext_menu-5">
     <nav class="navbar navbar-dropdown navbar-fixed-top">
         <div class="container">
@@ -80,6 +79,7 @@
             </div>
         </div>
     </div>
+	<form action="runregserv" method="post">
     <div class="mbr-section mbr-section-nopadding">
         <div class="container">
             <div class="row">
@@ -95,13 +95,13 @@
                             <div class="col-xs-12 col-md-3">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-g-name">Name<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="name" required="true" data-form-field="Name" id="form1-g-name">
+                                    <input type="text" class="form-control" id="nome" name="nome" required="true" data-form-field="nome" id="form1-g-name">
                                 </div>
                             </div>
                             <div class="col-xs-12 col-md-3">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-g-name">Sobrenome<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" name="surname" required="true" data-form-field="surname" id="form1-g-name">
+                                    <input type="text" class="form-control" id="surmane" name="surname" required="true" data-form-field="surname" id="form1-g-name">
                                 </div>
                             </div>
                             <div class="col-xs-12 col-md-3">
@@ -118,7 +118,6 @@
                             </div>
 
                         </div>
-
                         <div class="row row-sm-offset">
                             <div class="col-xs-12 col-md-3">
                                 <div class="form-group">
@@ -126,13 +125,19 @@
                                     <input type="text" class="form-control" name="office" required="true" data-form-field="office" id="form1-g-name">
                                 </div>
                             </div>
-                            <div class="col-xs-12 col-md-3">
+                            <div class="col-xs-12 col-md-2">
+                                <div class="form-group">
+                                    <label class="form-control-label" for="form1-g-name">Classificação<span class="form-asterisk">*</span></label>
+                                    <input type="text" class="form-control" name="classification" required="true" data-form-field="classification" id="form1-g-name">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-2">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-g-name">SIAPE<span class="form-asterisk">*</span></label>
                                     <input type="number" class="form-control" name="siape" required="true" data-form-field="Name" id="form1-g-name">
                                 </div>
                             </div>
-                            <div class="col-xs-12 col-md-3">
+                            <div class="col-xs-12 col-md-2">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-g-phone">Telefone<span class="form-asterisk">*</span></label>
 									<input type="tel" name="phone" required="true" data-form-field="Phone" data-mask="(00) 00000-0000" data-mask-selectonfocus="true" placeholder="00 00000-0000" class="form-control">
@@ -150,15 +155,13 @@
                             <textarea class="form-control" name="annotation" rows="3" data-form-field="Message" id="form1-g-message"></textarea>
                         </div>
                         <div><button type="submit" class="btn btn-default">Cadastrar</button> <button type="button" class="btn btn-default">Voltar</button></div>
-                    </form>
                 </div>
             </div>
         </div>
+		</form>
     </div>
 </section>
-</form>
 <footer class="mbr-small-footer mbr-section mbr-section-nopadding" id="footer1-c" style="background-color: rgb(239, 239, 239); padding-top: 1.2rem; padding-bottom: 2.0rem;">
-    
     <div class="container">
         <p class="text-xs-center">Rodovia Santa Inês - Ubaíra. &nbsp;:: . Zona Rural.</p>
     </div>
