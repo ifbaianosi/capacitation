@@ -102,6 +102,7 @@
 							}
 						?>
 						Data de nascimento <?= $e->birth[8].$e->birth[9].' de '.$strMonth.' de '.$year;?></br>
+						Cargo: <?= $e->office ?> <img src="assets/glyphicons_free/glyphicons/png/glyphicons-523-user-flag.png"> </br>
 						Currículo Lattes <img src="assets/glyphicons_free/glyphicons/png/glyphicons-501-education.png"></br>
 						E-mail <a href="mailto:<?= $e->email; ?>"><img src="assets/glyphicons_free/glyphicons/png/glyphicons-11-envelope.png" title="<?= $e->name; ?>"></a></br>
 						<span class="glyphicon glyphicon-shopping-cart"></span>

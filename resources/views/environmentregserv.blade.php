@@ -95,13 +95,13 @@
                             <div class="col-xs-12 col-md-3">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-g-name">Name<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" id="nome" name="nome" required="true" data-form-field="nome" id="form1-g-name">
+                                    <input type="text" class="form-control" id="_name" name="_name" required="true" data-form-field="nome" id="form1-g-name">
                                 </div>
                             </div>
                             <div class="col-xs-12 col-md-3">
                                 <div class="form-group">
                                     <label class="form-control-label" for="form1-g-name">Sobrenome<span class="form-asterisk">*</span></label>
-                                    <input type="text" class="form-control" id="surmane" name="surname" required="true" data-form-field="surname" id="form1-g-name">
+                                    <input type="text" class="form-control" id="surname" name="surname" required="true" data-form-field="surname" id="form1-g-name">
                                 </div>
                             </div>
                             <div class="col-xs-12 col-md-3">

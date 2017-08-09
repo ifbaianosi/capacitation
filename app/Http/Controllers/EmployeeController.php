@@ -42,17 +42,27 @@ class EmployeeController extends Controller{
 			//$nome = Request::input('name');
 			
 
-				//$nome = Request::only(’name’);
-
 			/*
-			DB::insert('insert into employee(name,surname,siape,classification,office,email,phone,birth,entry_service,out_service,annotation)values(?,?,?,?,?,?,?,?,?,?,?)',array($name,$surname,$siape,$classification,$office,$email,$phone,'1999-02-02','2011-03-20','0001-01-01',$annotation));
+			
 
 			DB::table('servidor_setor')->insert(['idservidor'=>$idservidor,'idsetor'=>$idSetor,'entrada'=>'2015-10-10','saida'=>'0001-01-01','funcao'=>'Não possui']);
 			/*
 			DB::insert('insert into employee(name,surname,siape,classification,office,email,phone,birth,entry_service,out_service,annotation)values(?,?,?,?,?,?,?,?,?,?,?)',array('Gil Christiano','Guedes dos Santos','1754259','TAE','Analista','gilchristiano@gmail.com','073991181477','1979-04-26','2010-01-07','0001-01-01','Anotação'));
 			*/
-			$nome = Request::input('surname');
-			return $nome;
+			$_name = Request::input('_name');
+			$surname = Request::input('surname');
+			$siape = Request::input('siape');
+			$classification = Request::input('classification');
+			$office = Request::input('office');
+			$email = Request::input('email');
+			$phone = Request::input('phone');
+			$birth = Request::input('birth');
+			$idade = date('d/m/Y',strtotime($birth));
+			$entry_service = Request::input('entry_service');
+			$out_service = Request::input('0001-01-01');
+			$annotation = Request::input('annotation');
+			// DB::insert('insert into employee(name,surname,siape,classification,office,email,phone,birth,entry_service,out_service,annotation)values(?,?,?,?,?,?,?,?,?,?,?)',array($name,$surname,$siape,$classification,$office,$email,$phone,$birth,$entry_service,$out_service,$annotation));
+			return "$_name $surname $siape $classification $birth $idade $entry_service $office $email $phone $annotation";
 			/*
 			$params = Request::all();
 			$employee = new Employee($params);
